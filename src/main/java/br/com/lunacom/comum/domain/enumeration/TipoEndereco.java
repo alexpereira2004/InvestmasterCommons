@@ -1,0 +1,24 @@
+package br.com.lunacom.comum.domain.enumeration;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+import java.util.EnumSet;
+
+@AllArgsConstructor
+@Getter
+public enum TipoEndereco {
+    COMERCIAL("C", "Comercial"),
+    RESIDENCIAL("R","Residencial");
+
+    private final String codigo;
+    private final String Descricao;
+
+    public static TipoEndereco fromCodigo(String value) {
+        return EnumSet.allOf(TipoEndereco.class)
+                .stream()
+                .filter(it -> it.getCodigo().equals(value))
+                .findFirst()
+                .orElse(RESIDENCIAL);
+    }
+}
