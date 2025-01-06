@@ -1,6 +1,7 @@
 package br.com.lunacom.comum.domain;
 
-import br.com.lunacom.portal.domain.enumeration.Boleano;
+
+import br.com.lunacom.comum.domain.enumeration.Boleano;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -33,7 +34,7 @@ public class Endereco extends BasicEntity<Endereco> implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "pessoa_id")
-    private br.com.lunacom.portal.domain.Pessoa pessoa;
+    private Pessoa pessoa;
 
     @Override
     public String toString() {

@@ -1,13 +1,13 @@
 package br.com.lunacom.comum.domain.request;
 
-import br.com.lunacom.portal.validation.DataBrasil;
+import br.com.lunacom.comum.validation.DataBrasil;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
-import javax.validation.constraints.NotEmpty;
 
 @AllArgsConstructor
 @NoArgsConstructor

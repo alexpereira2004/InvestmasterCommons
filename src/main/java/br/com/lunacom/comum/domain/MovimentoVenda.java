@@ -29,5 +29,5 @@ public class MovimentoVenda {
     @ManyToOne
     @JoinColumn(name="ativo_id")
     @EqualsAndHashCode.Exclude
-    private br.com.lunacom.portal.domain.Ativo ativo;
+    private Ativo ativo;
 }

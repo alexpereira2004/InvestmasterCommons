@@ -1,7 +1,7 @@
 package br.com.lunacom.comum.domain;
 
-import br.com.lunacom.portal.domain.dto.AtivoDividendoDto;
-import br.com.lunacom.portal.domain.dto.MediaDividendosValoresDto;
+import br.com.lunacom.comum.domain.dto.AtivoDividendoDto;
+import br.com.lunacom.comum.domain.dto.MediaDividendosValoresDto;
 import lombok.*;
 
 import javax.persistence.*;
@@ -89,6 +89,6 @@ public class Dividendo extends BasicEntity<Dividendo>  {
     @ManyToOne
     @JoinColumn(name="ativo_id")
     @EqualsAndHashCode.Exclude
-    private br.com.lunacom.portal.domain.Ativo ativo;
+    private Ativo ativo;
 
 }

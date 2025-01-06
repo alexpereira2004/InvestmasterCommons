@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 
 @MappedSuperclass
 @Data
-public abstract class BasicEntity<T> implements Serializable, br.com.lunacom.portal.domain.GenericEntity<T> {
+public abstract class BasicEntity<T> implements Serializable, GenericEntity<T> {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Integer id;

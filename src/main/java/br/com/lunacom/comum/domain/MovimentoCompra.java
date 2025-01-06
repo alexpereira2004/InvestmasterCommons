@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-public class MovimentoCompra implements Serializable, br.com.lunacom.portal.domain.GenericEntity<MovimentoCompra> {
+public class MovimentoCompra implements Serializable, GenericEntity<MovimentoCompra> {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Integer id;
@@ -25,7 +25,7 @@ public class MovimentoCompra implements Serializable, br.com.lunacom.portal.doma
     @ManyToOne
     @JoinColumn(name="ativo_id")
     @EqualsAndHashCode.Exclude
-    private br.com.lunacom.portal.domain.Ativo ativo;
+    private Ativo ativo;
 
     @Override
     public LocalDateTime getDataCriacao() {

@@ -40,7 +40,7 @@ public class Cotacao implements Serializable, Comparable<Cotacao> {
     @ManyToOne
     @JoinColumn(name="ativo_id")
     @EqualsAndHashCode.Exclude
-    private br.com.lunacom.portal.domain.Ativo ativo;
+    private Ativo ativo;
 
     @Override
     public int compareTo(Cotacao o) {

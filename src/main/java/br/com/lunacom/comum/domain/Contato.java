@@ -1,6 +1,6 @@
 package br.com.lunacom.comum.domain;
 
-import br.com.lunacom.portal.domain.enumeration.TipoContato;
+import br.com.lunacom.comum.domain.enumeration.TipoContato;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -26,7 +26,7 @@ public class Contato extends BasicEntity<Contato> implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "pessoa_id")
-    private br.com.lunacom.portal.domain.Pessoa pessoa;
+    private Pessoa pessoa;
 
     @Override
     public String toString() {

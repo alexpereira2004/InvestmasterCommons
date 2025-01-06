@@ -1,12 +1,12 @@
 package br.com.lunacom.comum.domain.request;
 
-import br.com.lunacom.portal.validation.DataBrasil;
+import br.com.lunacom.comum.validation.DataBrasil;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.NotBlank;
 
 @AllArgsConstructor
 @NoArgsConstructor

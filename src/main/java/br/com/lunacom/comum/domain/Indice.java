@@ -24,5 +24,5 @@ public class Indice implements Serializable {
     private String caminho;
 
     @ManyToMany(mappedBy = "indices", fetch = FetchType.LAZY)
-    Set<br.com.lunacom.portal.domain.Ativo> ativos;
+    Set<Ativo> ativos;
 }
